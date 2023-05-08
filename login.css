@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    width: 400px;
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .user-box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+  }
+  
+  button[type="submit"]  {
+    display: inline-block;
+    background-color: #03a9f4;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  a:hover {
+    background-color: #02a7f3;
+  }
+  
+  a span {
+    position: absolute;
+    display: block;
+  }
+  
+  a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: linear-gradient(90deg, transparent, #03a9f4);
+    animation: animate1 1s linear infinite;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  
+  a span:nth-child(2) {
+    top: -100%;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: linear-gradient(90deg, transparent, #03a9f4);
+    animation: animate2 1s linear infinite;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  
+    
+    
+      
